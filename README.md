@@ -16,24 +16,30 @@ Antes de começar, vamos organizar nosso setup.
 ### Resumo
 O que veremos na aula de hoje?
 * [Introdução ao Tableau Public](#tema1)
-* [Afinal o que são dashboards?](#tema2)
+* [Dashboards: outra abordagem de visualização de dados](#tema2)
 * [Construíndo visualizações no Tableau Public](#tema2)
-* [Refatorando visualizações criadas com os dados da Olist ](#tema2)
+* [Refatorando visualizações criadas com os dados da Olist](#tema2)
 * [Desafio da Semana ](#tema2)
 
 
 
 ## Conteúdo
 ### Introdução ao Tableau Public  
-1. [Criando sua conta no Tableau](#-criando-sua-conta-no-tableau)
+1. [Atividade: Criando sua conta no Tableau](#atividade-:-criando-sua-conta-no-tableau)
 
 
 ### Dashboards: outra abordagem de visualização de dados
-1. [Parte I](#topico3)
-    * [Avaliando os tipos de dados na base da Netflix e Olist](#tema3)
+1. [Por que criar uma visualização de dados?](#por-que-criar-uma-visualização-de-dados)
+2. [Como viemos parar aqui?](#como-viemos-parar-aqui)
+3. [Princípios básicos da visualização de dados](#princípios-básicos-da-visualização-de-dados)
+4. [Etapas da criação de uma visualização de dados](#etapas-da-criação-de-uma-visualização-de-dados)    
+    * [Como definir que tipo de gráfico usar?](#como-definir-que-tipo-de-gráfico-usar)
+    * [Atividade: Avaliando os tipos de dados na base da Netflix e Olist](#atividade-avaliando-os-tipos-de-dados-na-base-da-netflix-e-olist)
     
-2.  [Parte 2](#tema2)
-    * [Avaliando dashboards e sua eficácia](#tema2)
+2.  [Etapas da criação de uma visualização de dados (continuação)](#etapas-da-criação-de-uma-visualização-de-dados)
+    * [Storytelling](#storytelling)
+    * [Design](#design)
+    * [Atividade: Avaliando dashboards e sua eficácia](#tema2)
    
 ### Criando dashboards no Tableau Public
 * [Importando dados](#tema2)
@@ -47,7 +53,7 @@ O que veremos na aula de hoje?
 O Tableau Public é uma plataforma gratuita para explorar, criar e compartilhar publicamente visualizações de dados online. Através dele é possível publicar suas visualizações em uma espécie de "repositório", então é uma excelente alternativa para a criação de um portfólio de dados. No próprio site da empresa você consegue acessar os repositórios de outras pessoas e explorar seus projetos. A empresa Tableau possui vários produtos, contudo, o Tableau Public é um software gratuito que pode ser utilizado tanto no desktop quanto na nuvem.
 
 
-#### Criando sua conta no Tableau
+#### Atividade: Criando sua conta no Tableau
   Agora é hora de vocês conhecerem um pouquinho mais sobre essa ferramenta!
 
   Com milhões de visualizações de dados interativas feitas por mais de um milhão de criadores em todo o mundo, o Tableau Public permite que você explore a arte do que é possível com dados sobre qualquer assunto, de música a esportes e política. **Navegue nos canais selecionados de visualizações criadas pela comunidade ou pesquise tópicos por palavra-chave com a ajuda de hashtags**. 
@@ -68,13 +74,25 @@ O Tableau Public é uma plataforma gratuita para explorar, criar e compartilhar 
   🌟 **DICA** Adicione as visualizações que o inspiram ao seu canal Favoritos para criar uma coleção de visualizações que você pode revisitar a qualquer momento.
 
   
-### Por que criar uma visualização de dados?
+### Dashboards: outra abordagem de visualização de dados
+
+#### Por que criar uma visualização de dados?
 Na aula anterior, aprendemos sobre os fundamentos da análise de dados, criamos um notebook exploratório com dados da Netflix e da Olist, e criamos visualizações utilizando o Python. Considerando que temos essa ferramenta que pode ser utilizada para trazer insights, qual o valor do Tableau aqui? Quais as vantagens de utilizar um dashboard em relação ao notebook?
 
 Para responder essa pergunta, precisamos retomar um conceito aprendido na aula anterior: **empresas data-driven**. De forma simplista, uma empresa data-driven é uma empresa que toma decisões baseadas em dados. Portanto, os times que efetivamente tomam essas decisões não são técnicos, são pessoas de área comercial, negócios, operações que não necessariamente possuem qualquer conhecimento técnico. Portanto, se passamos um notebook exploratório para essas pessoas, poucos ou até nenhum insight e tomada de decisão será tomada a partir disso, porque? Porque a informação contida lá não está "digerida". É exatamente por esse motivo que ferramentas de dashboard são essenciais para apoiar os times de negócios. Com um dashboard, você é capaz de simplicar a informação e criar correlações que ajudem o time de negócios a entender padrões e tendências. Hoje, existem diversas ferramentas que fazem esse papel de dashboards, temos o próprio Tableau, Power BI, Looker, etc. Cada uma tem a sua especificidade, mas a ideia por trás é sempre a mesma, democratizar a informação de forma simples e eficaz.
 
-#### Mas afinal o que é um dashboard?
-...
+#### Como viemos parar aqui?
+
+As primeiras visualizações de informação remontam aos mapas de navegação elaborados por exploradores e navegadores antigos, , especialmente a partir da Era dos Descobrimentos nos séculos XV e XVI. Estes mapas não apenas delineavam rotas marítimas e geografia, mas também eram essenciais para a compreensão e comunicação das descobertas e conquistas territoriais. Ao representar graficamente as rotas navegáveis, perigos marítimos e pontos de interesse, esses mapas não só facilitaram a navegação, mas também estabeleceram um precedente na arte de visualizar dados complexos de maneira intuitiva e compreensível.
+
+Ao longo da história da visualização de dados, figuras como Florence Nightingale foram pioneiras na criação de representações que transcendem o simples relato numérico. Florence Nightingale, conhecida não apenas por suas contribuições na enfermagem, mas também na estatística, criou um diagrama que se tornou icônico: a rosa de Nightingale. Este diagrama, desenvolvido durante a Guerra da Crimeia, ilustrou de forma vívida e acessível a magnitude das mortes por doenças evitáveis nos hospitais militares britânicos. A notoriedade do diagrama não se limita à sua eficácia técnica, mas também à habilidade de Nightingale em comunicar visualmente uma mensagem complexa de maneira impactante e memorável para o público da época.
+[História dos infográficos](https://history.infowetrust.com/)
+
+Com o advento da era digital e a disseminação de computadores pessoais, surgiram uma infinidade de softwares especializados, (como o Tableau), que democratizaram e facilitaram a criação de visualizações complexas. Essas ferramentas proporcionam interfaces intuitivas e recursos de arrastar e soltar, permitindo que mais pessoas possam criar visualizações dinâmicas e informativas. Esse avanço não apenas simplificou o processo de análise de dados, mas também ampliou o alcance e a eficácia das interpretações derivadas dos dados, transformando a maneira como empresas e profissionais abordam a visualização e a utilização de dados para decisões estratégicas.
+
+**Extra**
+Esta é uma coleção de algumas das muitas ferramentas, aplicativos, kits de ferramentas, bibliotecas, plataformas e pacotes de visualização de dados (e relacionados). Organizada desde de 2010 para fornecer aos leitores uma visão atual e abrangente do cenário da tecnologia de visualização de dados. 
+[link](https://visualisingdata.com/resources/)
 
 #### Princípios básicos da visualização de dados
 Nesta seção, vamos explorar os princípios fundamentais que norteiam a criação de visualizações eficazes e impactantes. Vamos mergulhar em conceitos-chave que ajudarão você a criar visualizações que comunicam informações de forma clara e concisa.
@@ -106,7 +124,7 @@ Assim como fizemos durante a nossa análise exploratória na aula passada, com a
 
 Agora, vamos entender um pouco melhor sobre como podemos trabalhar os diferentes tipos de dados para garantirmos que a informação será transmitida de forma clara. Como disse anteriormente, dependendo da natureza dos dados, diferentes tipos de gráficos são mais adequados para representá-los.
 
-#### Como definir que tipo de gráfico usar?
+##### Como definir que tipo de gráfico usar?
 A escolha do tipo de gráfico para representar nossas informações depende da natureza dos dados que estamos analisando. Para isso, é fundamental entendermos o conceito de classificação de variáveis. Esse conceito estatístico é crucial, pois é a estrutura que todos os softwares de análise, incluindo o Tableau, utilizam para organizar seu ambiente de visualização e análise.
 
 Uma classificação de variáveis segue a seguinte estrutura:
@@ -121,7 +139,7 @@ Os campos de dados são feitos de colunas na sua fonte de dados. Cada campo rece
 
 * **Medidas contém valores numéricos e quantitativos** que podem ser medidos. As medidas são agregadas por padrão (Soma, Média, Contagem,...). Quando você arrasta uma medida para a exibição, o Tableau aplica uma agregação na “pílula”.
 
-#### Campos azuis x verdes
+##### Tableau: Campos azuis x verdes
 O Tableau representa os dados de forma diferente na exibição, dependendo se o campo é discreto ou contínuo.
 
 * Contínuo significa “formar um todo ininterrupto, sem interrupção”. Esses campos são coloridos em verde. Quando um campo contínuo é colocado na divisória Linhas ou Colunas, um eixo é criado na visualização.
@@ -151,7 +169,7 @@ Um bom catálogo de gráficos também pode te ajudar! Aqui seguem alguns links:
 Sempre que estiver em dúvida sobre qual gráfico seria melhor. A resposta é simples: Qualquer um que seja fácil para seu público ler e compreender.
 
 ---
-**Dinâmica: Avaliando os tipos de dados na base da Netflix e Olist**
+#### **Atividade: Avaliando os tipos de dados na base da Netflix e Olist**
 
 Agora que vocês entenderam um pouco melhor sobre os tipos de dados e a melhor forma de visualizá-los, vamos retomar às tabelas que trabalhamos na semana passada, da Netflix e da Olist. 
 
@@ -167,6 +185,7 @@ Nós iremos realizar uma classificação da nossa base:
 #### Dashboards: outra abordagem de visualização de dados (Parte 2)
 Agora que entendemos os conceitos da visualização de dados e os diferentes tipos de gráfico que conseguimos utilizar, chegou a hora de colocarmos a cereja no bolo para criarmos visualizações eficientes: precisamos nos aprofundar em sequência lógica (storytelling) e design.
 
+##### Storytelling
 A sequência lógica refere-se à organização e estruturação da apresentação dos elementos visuais de forma a guiar o público através da história ou mensagem que se deseja transmitir. Uma sequência lógica ajuda os usuários a compreenderem melhor os dados, interpretarem as informações corretamente e extrair insights de maneira clara e coerente.
 
 Vamos mergulhar em alguns conceitos para entender melhor como podemos garantir uma sequência lógica eficiente em nossos dashboards:
@@ -202,7 +221,7 @@ A escolha de cores e a paleta de cores desempenham um papel crucial na visualiza
 
 Uma paleta de cores bem selecionada pode tornar o dashboard visualmente atraente, facilitar a interpretação dos dados e melhorar a experiência geral do usuário. Com a devida atenção à escolha de cores, você pode criar dashboards de visualização de dados eficazes e envolventes.
 
-links:
+links úteis:
 
 [Adobe Colors](#https://color.adobe.com/pt/create/color-wheel)
 
@@ -210,10 +229,12 @@ links:
 
 
 ---
-#### Dinâmica: Avaliando dashboards e sua eficácia
+#### Atividade: Avaliando dashboards e sua eficácia
 Agora que vocês entenderam melhor sobre a importância da escolha correta de gráficos, cores e sequencia lógica, chegou a hora de vocês analisarem 4 dashboards diferentes. Em grupos, analisem se a informação é facilmente "digerível", e avalie o que pode ser melhorado em cada uma delas. 
 
 [Acesse aqui](https://docs.google.com/presentation/d/1ecgGf9zS1PrHMsSIdwB1ur4ccoQ1T9xhwGvgcBY_c64/edit?usp=sharing)
+
+---
 
 ### Criando dashboards no Tableau Public
 Agora chegou a vez de colocarmos a mão na massa!
@@ -227,7 +248,7 @@ E por último, vamos desenvovler juntas um dashboard final!
 Siga os [tutoriais](./exercicios/para-sala/) junto com a professora!
 
 ---
-### Dinâmica: Refatorando visualizações criadas com os dados da Olist
+#### Atividade Refatorando visualizações criadas com os dados da Olist
 Na semana passada vocês precisaram entregar uma base final enriquecida com mais tabelas da base da Olist, lembram? 
 
 Vocês irão utilizar essa base final criada na semana passada para replicar todas as visualizações que vocês criaram no notebook exploratório de vocês. Se o campo status entrega (que fizemos na prática de gráficos), por exemplo, for um campo que você já trouxe calculado, ótimo! Caso contrário, use essa oportunidade para calculá-lo no Tableau e compare os resultados!
@@ -259,6 +280,7 @@ Submeta uma pasta que contenha:
 * [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
 
 ### Material da aula 
+[Materiais](material/)
 
 ### Links Úteis
 
