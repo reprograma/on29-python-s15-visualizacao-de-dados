@@ -63,7 +63,7 @@ O Tableau Public é uma plataforma gratuita para explorar, criar e compartilhar 
 
   1. Criar a sua [conta](https://id.tableau.com/register?clientId=wcS7HwY98qdfgBREHT7Xoln7ipc75U0a);
   2. Logar no [Tableau Public](https://identity.idp.tableau.com/login?state=hKFo2SBXUUc4cmxFek5Ya3JyRDlFMFB3cEppMW5iWnpfZmdDWKFupWxvZ2luo3RpZNkgVm0yNEw1bGgxQUo2U1FCYnJBWVk0c0VuUmRfdGZON3CjY2lk2SB3Y1M3SHdZOThxZGZnQlJFSFQ3WG9sbjdpcGM3NVUwYQ&client=wcS7HwY98qdfgBREHT7Xoln7ipc75U0a&protocol=oauth2&response_type=code&redirect_uri=https%3A%2F%2Fpublic.tableau.com%2Fpublic%2Fapis%2Fauth%2Fprovision&scope=openid%20email%20profile&nonce=a5QRsMinkvo);
-  3. Explorar os repositorios por temas que te interessem e ver como as pessoas dispõem e mostram essas informações. Caso goste de algum, favorite esse repositório! [Aqui](https://public.tableau.com/app/search/all)
+  3. Explorar os repositórios por temas que te interessem e ver como as pessoas dispõem e mostram essas informações. Caso goste de algum, favorite esse repositório! [Aqui](https://public.tableau.com/app/search/all)
 
  Divirta-se! :)
 
@@ -85,12 +85,15 @@ Para responder essa pergunta, precisamos retomar um conceito aprendido na aula a
 
 As primeiras visualizações de informação remontam aos mapas de navegação elaborados por exploradores e navegadores antigos, , especialmente a partir da Era dos Descobrimentos nos séculos XV e XVI. Estes mapas não apenas delineavam rotas marítimas e geografia, mas também eram essenciais para a compreensão e comunicação das descobertas e conquistas territoriais. Ao representar graficamente as rotas navegáveis, perigos marítimos e pontos de interesse, esses mapas não só facilitaram a navegação, mas também estabeleceram um precedente na arte de visualizar dados complexos de maneira intuitiva e compreensível.
 
-Ao longo da história da visualização de dados, figuras como Florence Nightingale foram pioneiras na criação de representações que transcendem o simples relato numérico. Florence Nightingale, conhecida não apenas por suas contribuições na enfermagem, mas também na estatística, criou um diagrama que se tornou icônico: a rosa de Nightingale. Este diagrama, desenvolvido durante a Guerra da Crimeia, ilustrou de forma vívida e acessível a magnitude das mortes por doenças evitáveis nos hospitais militares britânicos. A notoriedade do diagrama não se limita à sua eficácia técnica, mas também à habilidade de Nightingale em comunicar visualmente uma mensagem complexa de maneira impactante e memorável para o público da época.
-[História dos infográficos](https://history.infowetrust.com/)
+Ao longo da história da visualização de dados, figuras como Florence Nightingale foram pioneiras na criação de representações que transcendem o simples relato numérico. Florence, conhecida não apenas por suas contribuições na enfermagem, mas também na estatística, criou um diagrama que se tornou icônico: a rosa de Nightingale. Este diagrama, desenvolvido durante a Guerra da Crimeia, ilustrou de forma vívida e acessível a magnitude das mortes por doenças evitáveis nos hospitais militares britânicos. A notoriedade do diagrama não se limita à sua eficácia técnica, mas também à habilidade de Nightingale em comunicar visualmente uma mensagem complexa de maneira impactante e memorável para o público da época.
+
+[Infográficos: uma linha do tempo](https://history.infowetrust.com/)
+
+[A história de Florance Nightingale](https://www.youtube.com/watch?v=Ik6X2-DCudU)
 
 Com o advento da era digital e a disseminação de computadores pessoais, surgiram uma infinidade de softwares especializados, (como o Tableau), que democratizaram e facilitaram a criação de visualizações complexas. Essas ferramentas proporcionam interfaces intuitivas e recursos de arrastar e soltar, permitindo que mais pessoas possam criar visualizações dinâmicas e informativas. Esse avanço não apenas simplificou o processo de análise de dados, mas também ampliou o alcance e a eficácia das interpretações derivadas dos dados, transformando a maneira como empresas e profissionais abordam a visualização e a utilização de dados para decisões estratégicas.
 
-**Extra**
+🌟 **DICA**
 Esta é uma coleção de algumas das muitas ferramentas, aplicativos, kits de ferramentas, bibliotecas, plataformas e pacotes de visualização de dados (e relacionados). Organizada desde de 2010 para fornecer aos leitores uma visão atual e abrangente do cenário da tecnologia de visualização de dados. 
 [link](https://visualisingdata.com/resources/)
 
@@ -243,7 +246,7 @@ Primeiro vamos importar nossos dados e começar a construir nossas primeiras vis
 
 Em seguida, vamos desenvolver ainda mais nossos gráficos;
 
-E por último, vamos desenvovler juntas um dashboard final!
+E por último, vamos desenvolver juntas um dashboard final!
 
 Siga os [tutoriais](./exercicios/para-sala/) junto com a professora!
 
@@ -276,13 +279,24 @@ Submeta uma pasta que contenha:
 
 ***
 ### Exercícios 
-* [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
-* [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
+* [Exercicio para sala](/exercicios/para-sala/)
+* [Exercicio para casa](/exercicios/para-casa/)
 
 ### Material da aula 
 [Materiais](material/)
 
 ### Links Úteis
+
+
+
+- https://color.adobe.com/pt/create/color-wheel
+- https://www.color-hex.com/color-palettes/
+- https://www.anychart.com/chartopedia/usage-type/
+- https://datavizcatalogue.com/
+- https://help.tableau.com/current/pro/desktop/pt-br/datafields_typesandroles.htm
+- https://visualisingdata.com/resources/
+- https://history.infowetrust.com/
+- https://www.youtube.com/watch?v=Ik6X2-DCudU
 
 
 
