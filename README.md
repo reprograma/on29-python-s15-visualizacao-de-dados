@@ -25,7 +25,7 @@ O que veremos na aula de hoje?
 
 ## Conteúdo
 ### Introdução ao Tableau Public  
-1. [Atividade: Criando sua conta no Tableau](#atividade-:-criando-sua-conta-no-tableau)
+1. [Atividade: Criando sua conta no Tableau](#atividade-criando-sua-conta-no-tableau)
 
 
 ### Dashboards: outra abordagem de visualização de dados
