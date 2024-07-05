@@ -23,10 +23,10 @@ Vamos para a Sheets 1.
 
 Iremos ver essa tela sempre que abrirmos uma Planilha (ou sheets) nova. Ao lado esquerdo encontramos todas as colunas da nossa tabela. Logo ao lado temos a label de Marcas que é onde controlamos o tipo de gráfico, e a forma que queremos apresentar nossa informação. 
 
-    O Tableau utiliza uma estrutura de arquivos de pasta e planilha, muito semelhante ao Microsoft Excel. Um workbook (livro de trabalho) contém sheets (planilhas). Uma sheet pode ser uma worksheet (planilha de trabalho), um dashboard (painel de controle) ou uma story (história).
+*O Tableau utiliza uma estrutura de arquivos de pasta e planilha, muito semelhante ao Microsoft Excel. Um workbook (livro de trabalho) contém sheets (planilhas). Uma sheet pode ser uma worksheet (planilha de trabalho), um dashboard (painel de controle) ou uma story (história).*
 
-    BASICAMENTE O TABLEAU SEGUE ESSA ESTRUTURA:
-    worksheets < dashboards < story
+*BASICAMENTE O TABLEAU SEGUE ESSA ESTRUTURA:*
+*worksheets < dashboards < story*
 
 
  * Uma **worksheet** contém uma única visualização junto com prateleiras, cartões, legendas e os painéis Data e Analytics na sua barra lateral. 

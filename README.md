@@ -131,7 +131,7 @@ Agora, vamos entender um pouco melhor sobre como podemos trabalhar os diferentes
 A escolha do tipo de gráfico para representar nossas informações depende da natureza dos dados que estamos analisando. Para isso, é fundamental entendermos o conceito de classificação de variáveis. Esse conceito estatístico é crucial, pois é a estrutura que todos os softwares de análise, incluindo o Tableau, utilizam para organizar seu ambiente de visualização e análise.
 
 Uma classificação de variáveis segue a seguinte estrutura:
-![alt text](assets\image.png)
+![alt text](assets/image.png)
 
 
 Da mesma forma, o Tableau identifica cada campo de um dataset como uma **dimensão** ou **medida** no painel Dados, dependendo do tipo de dados que o campo contém. E são essas campos que você usa esses para criar sua análise.
